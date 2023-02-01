@@ -1,0 +1,56 @@
+#menu {
+	background-color:green;
+	font-size:20px;
+	border:5px solid black
+}
+
+.box_table>table {
+	border-width:2px;
+	border-style:solid;
+	border-color:black;
+}
+
+.box_table>table th {
+	text-align:center;
+	border:2px solid green;
+}
+
+.box_table>table tr{
+	background-color:lightgreen;
+}
+
+.box_table>table tr:hover{
+	background-color:darkblue;
+}
+
+h1 {
+	background-color:lightblue;
+}
+
+li {
+	color:red;
+}
+
+#imglayout {
+	border-radius: 50%
+}
+
+.textboxstyle {
+	background-color:gray;
+	color:white;
+}
+
+a {
+	color:blue;
+}
+
+body {
+	background-color:lightblue;
+	font-family:"Times New Roman";
+}
+
+.ulnavigation {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
