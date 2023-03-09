@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="JSTask.js"></script>
+  <title> Tasks List </title>
+  <style>
+
+  h1 {
+      text-align:center;
+      font-size:12mm;
+  }
+
+  input[type=text] {
+      border: 5px solid green;
+      border-radius: 5px;
+  }
+
+  label {
+      font-family: Times New Roman,sans-serif;
+      font-size: 5mm;
+  }
+
+  </style>
+</head>
+<body style="background-color:gray">
+    <h1 class="jumbotron" style="background-color:blue"> To-do List </h1>
+    <ul id="task_list"> 
+    </ul>
+    <form id="new_task">
+    <input id="task_title" autocomplete="off" autofocus placeholder="New Task" type="text"> <br>
+    <label for="priority" style="color:red"> Select the task's priority </label>
+    <select id="priority" name="priority" class="form-control">
+        <option value="low"> low </option>
+        <option value="medium"> medium </option>
+        <option value="high"> high </option>
+    </select> </br>
+    <input type="radio" id="pending" name="status" value="Pending">
+    <label for="pending" style="color:yellow"> pending </label>
+    <input type="radio" id="complete" name="status" value="Complete">
+    <label for="complete" style="color:yellow"> complete </label> <br>
+    <input id="submit"  class="btn btn" type="submit">
+    </form>
+</body>
+</html>
