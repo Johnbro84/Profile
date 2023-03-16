@@ -3,14 +3,18 @@ document.addEventListener('DOMContentLoaded', function() {
 	document.querySelector("#new_task").onsubmit = function() {
 		const li = document.createElement('li');
 		let task_info = document.querySelector('#task_title').value;
+		let task_priority = document.querySelector('#priority').value;
+		let task_pending = document.querySelector('input[name="status"]:checked').value;
 		let new_task = `
-							<span> ${task_info} </span>
+							<span> ${task_info}, ${task_priority}, ${task_pending} </span>
 							<button class="remove"> Remove </button>
 							<button class="mark_as_complete"> Mark as complete </button>
 						`;
 		li.innerHTML = new_task
 		document.querySelector("#task_list").append(li);
-		document.querySelector("#task_title").value = ' ';
+		document.querySelector("#task_title").value = '';
+		document.querySelector("#priority").value = '';
+		document.querySelector('input[name="status"]:checked').value = '';
 		list.push(li);
 		return false;
 	}
